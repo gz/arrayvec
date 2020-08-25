@@ -137,7 +137,7 @@ fix_array_impl_recursive!(u8,
 253, 254, 255,
 );
 
-fix_array_impl_recursive!(u16, 256, 384, 512, 768, 1024, 2048, 4096, 8192, 16384, 32768,);
+fix_array_impl_recursive!(u16, 128, 256, 381, 384, 512, 768, 1024, 2048, 4096, 8192, 16384, 32768,);
 // This array size doesn't exist on 16-bit
 #[cfg(any(target_pointer_width="32", target_pointer_width="64"))]
 fix_array_impl_recursive!(u32, 1 << 16, 131070, 131071, 1 << 17,);
