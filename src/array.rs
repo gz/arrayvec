@@ -92,7 +92,7 @@ macro_rules! fix_array_impl {
             fn as_mut_slice(&mut self) -> &mut [Self::Item] { self }
         }
     )
-}https://github.com/gz/arrayvec.git
+}
 
 macro_rules! fix_array_impl_recursive {
     ($index_type:ty, ) => ();
